@@ -1,29 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#EBF3FC;
+    font-family: 'Roboto Slab', sans-serif;
     color: #0F427D;
 }
 
-.pic {
+#pages{
+    background-color:#0F427D;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-block: 20px;
+    letter-spacing: 00.1em;
+}
+
+#pages ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;  
+    font-family: 'Play', sans-serif;
+    color: #EBF3FC; 
+
+}
+
+#pages li {
+    padding-inline: 10px;
+    font-size: large;
+    letter-spacing: 0.1em;
+    color: #EBF3FC;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#pic {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     justify-content: space-evenly;
-    margin-top: 150px;
-    background-color: #EEF5FD;
+    margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    align-content: center;
+    align-items: center;
+    margin-left : 100px;
+    margin-right: 100px;
 }
 
 img {
-    height: 200px;
-    border-radius: 10%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #CDE2F9;
+    height: 350px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style:solid;
+    border-color:#0F427D; 
 }
 
 .banner {
    text-align: center;
+   font-family: 'Righteous', serif;
+  font-size: larger;
+}
+
+.banner p {
+    padding:20px;
+
+}
+
+#v1 {
+    border-left: 3px solid #0F427D;
+    height: 150px;
+    position: relative;
+    left: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-left: 250px;
+} 
+
+main p {
+    display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0em;
+   margin-inline-end: 0em;
+}
+
+main h3 {
+    margin: 20px;
 }
