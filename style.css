@@ -124,6 +124,12 @@ a {
   border: solid var(--secondary) 10px;
 }
 
+.container1 p {
+  padding: 20px;
+  text-align: left;
+  font-size: 50px;
+}
+
 /* * {
   box-sizing: border-box;
   padding: 0;
